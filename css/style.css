@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-weight: 250;
+    min-height: 100vh;
+    background-color: #bfdbf7;
+    display: flex;
+    flex-direction: column;
+}
+header, 
+footer {
+    position: sticky;
+    background-color: #1B2A41;
+    color: whitesmoke;
+    text-align: center;
+
+}
+header{
+    top: 0;
+    font-size: 1rem;
+    
+}
+
+nav{
+    background-color: #FCA311;
+    padding: 0.7rem;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav a:link{
+    color: #000;
+    text-decoration: none;
+}
+nav a,
+nav a:visited{
+    color: #bfdbf7;
+}
+nav a:hover,
+nav a:focus {
+    color:  blue;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+
+}
+footer{
+    bottom: 0;
+    padding: 1rem;
+}
+.cards{
+    scroll-margin-top: 6rem;
+    width: min(100%, 250px);
+    background-color: #000;
+    border: 2px solid #FCA311;
+    border-radius: 10px;
+    /*border-radius: 200px 20px 200px 20px;*/
+    padding: 1.5rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.cards img {
+    border: 2px solid #000;
+    display: flex;
+    border-radius: 200px 15px 200px 15px;
+    box-shadow: 200px 15px 200px 15px;
+
+}
+.cards figcaption{
+    margin: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cards p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
